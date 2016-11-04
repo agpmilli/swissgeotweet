@@ -1,1 +1,1 @@
-# swissgettweet
+# swissgeotweet
