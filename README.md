@@ -14,7 +14,7 @@ Our main source of data will be Twitter and Instagram posts.
 
 There's already a dataset composed of tweets in Switzerland from 2012. The [Twitter API overview](https://dev.twitter.com/overview/api) gives informations about what fields can be fetched from tweets
 
-[Instagram API endpoints](https://www.instagram.com/developer/endpoints/)
+We don't already have a dataset containing Instagram posts in Switzerland and it is part of our project to see if we can get this data. The [Instagram API endpoints](https://www.instagram.com/developer/endpoints/) gives informations about what can be fetched from Instagram posts.
 
 ## Feasibility and Risks
 
