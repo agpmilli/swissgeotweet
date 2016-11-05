@@ -18,6 +18,7 @@ We don't already have a dataset containing Instagram posts in Switzerland and it
 We can use [Instagram API Location](https://www.instagram.com/developer/endpoints/locations/) to get either the posts coming from a certain location or the id that is given to a location.
 
 ## Feasibility and Risks
+As we don't have a dataset with Instagram posts in Switzerland, we will need to find a way to get all this data for some months or years if possible. That will be one of the difficulty of the project.
 
 ## Deliverables
 
