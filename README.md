@@ -30,4 +30,6 @@ Finally, we will need to create an interactive map to visualize our population f
 
 ## Deliverables
 
+As previously explained, the final goal of this project is to deliver this interactive visualization of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others. We can also imagine that this map can be given with clean and explicit data tables which will be easily queryable for further applications.
+
 ## Timeplan
