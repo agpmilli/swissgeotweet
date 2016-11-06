@@ -6,7 +6,7 @@ The aim of this project is to:
 - build an affluence map of Switzerland based on various social network sources (geo-located tweets and possibly instagram posts at the moment)
 - infer mobility patterns from it and try to detect from regular events (ex: people living in the Vaud canton but working in the Geneva canton) to major events (ex: Paleo Festival, Geneva auto showroom)
 
-Using this timeline map, people will have the ability to get an affluence visualization other the time (months, days, hours) and space (main axes, cantons, cities, places). From there, they can filter the map and display the locations they want to visit according if it's crowded or not at that time of the year/day.
+Using this timeline map, people will have the ability to get an affluence visualization over the time (months, days, hours) and space (main axes, cantons, cities, places). From there, they can filter the map and display the locations they want to visit according if it's crowded or not at that time of the year/day.
 
 ## Data Description
 
@@ -20,9 +20,9 @@ We don't already have a dataset containing Instagram posts in Switzerland and it
 
 This project will require some challenging tasks. First of all, we need to get the corresponding datas. As we don't have it for Instagram posts in Switzerland, we will need to find a way to get it for some months or years if possible. We can perform some Instagram Mining using [python-instagram]( https://github.com/facebookarchive/python-instagram).
 
-For tweets, a dataset is already collected. Hence we have extract the relevant informations which are mainly the events' hashtags, the localizations and maybe users' ids. One difficulty is that not all tweets were produced by a device enabling geo-location. This will highly decrease the size of our data.
+For tweets, a dataset is already collected. Hence we have to extract the relevant informations which are mainly the events' hashtags, the localizations and maybe users' ids. One difficulty is that not all tweets were produced by a device enabling geo-location. This will highly decrease the size of our data.
 
-In addition, once our data characteristics will be extracted from the tweets, one difficulty will be to infer on the user's type of locations (workplace/home or in-between point). We then will need to identify hashtags of events from the others. As the hashtags are not really structured (mispellings, lot of variants for the same event, etc.), it may be difficult to infer the correct informations from them. It will also be interesting to do some analysis on the selected tweets' texts in order to have an idea about an event's characteristics for instance.
+In addition, once our data characteristics will be extracted from the tweets, one difficulty will be to infer on the user's type of locations (workplace/home or in-between point). We then will need to identify hashtags of events from the others. As the hashtags are not really structured (mispellings, lot of variants for the same event, etc.), it may be difficult to infer the correct informations from them. It will also be interesting to do some analysis on the selected tweets's texts in order to have an idea about an event's characteristics for instance.
 
 Once both datasets are collected, we will need to merge them and think about a representation that makes the storage size not to big and that allows us to query the data easily.
 
