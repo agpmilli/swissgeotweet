@@ -32,7 +32,7 @@ One point we can notice is that the data may not be representative of all the po
 
 ## Deliverables
 
-As previously explained, the final goal of this project is to deliver this interactive visualization of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others. We can also imagine that this map can be given with clean and explicit data tables which will be easily queryable for further applications.
+As previously explained, the final goal of this project is to deliver this interactive visualization of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others based on tweets and instagram posts. We can also imagine that this map can be given with clean and explicit data tables which will be easily queryable for further applications.
 
 ## Timeplan
 
