@@ -22,7 +22,7 @@ This project will require some challenging tasks. First of all, we need to get t
 
 For tweets, a dataset is already collected. Hence we have extract the relevant informations which are mainly the events' hashtags, the localizations and maybe users' ids. One difficulty is that not all tweets were produced by a device enabling geo-location. This will highly decrease the size of our data.
 
-In addition, once our data characteristics will be extracted from the tweets, one difficulty will be to infer on the user's type of locations (workplace/home or in-between point). We then will need to identify hashtags of events from the others. As the hashtags are not really structured (mispellings, lot of variants for the same event, etc.), it may be difficult to infer the correct informations from them. It will also be interesting to do some analysis on the selected tweets's texts in order to have an idea about an event's characteristics for instance.
+In addition, once our data characteristics will be extracted from the tweets, one difficulty will be to infer on the user's type of locations (workplace/home or in-between point). We then will need to identify hashtags of events from the others. As the hashtags are not really structured (mispellings, lot of variants for the same event, etc.), it may be difficult to infer the correct informations from them. It will also be interesting to do some analysis on the selected tweets' texts in order to have an idea about an event's characteristics for instance.
 
 Once both datasets are collected, we will need to merge them and think about a representation that makes the storage size not to big and that allows us to query the data easily.
 
