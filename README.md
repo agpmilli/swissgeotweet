@@ -3,14 +3,14 @@
 ## Abstract
 
 The aim of this project is to:
-- build an affluence map of Switzerland based on various social network sources (geo-located tweets and possibly instagram posts at the moment)
+- build a data set of Switzerland based on various social network sources (geo-located tweets and possibly instagram posts at the moment) to compute a flow analysis into an exploitable dataset for visualization (ex: timeline map, etc.)
 - infer mobility patterns from it and try to detect from regular events (ex: people living in the Vaud canton but working in the Geneva canton) to major events (ex: Paleo Festival, Geneva auto showroom)
 
-Using this timeline map, people will have the ability to get an affluence visualization over the time (months, days, hours) and space (main axes, cantons, cities, places). From there, they can filter the map and display the locations they want to visit according if it's crowded or not at that time of the year/day.
+With the visualization, people will have the ability to get an affluence overview in time (months, days, hours) and space (main axes, cantons, cities, places). From there, they can filter the map and display the locations they want to visit according if it's crowded or not at that time of the year/day.
 
 ## Data Description
 
-Our main source of data will be Twitter and Instagram posts.
+Our main source of data will be Twitter (and possibly Instagram posts).
 
 There's already a dataset composed of tweets in Switzerland from 2012. The [Twitter API overview](https://dev.twitter.com/overview/api) gives informations about what fields can be fetched from tweets.
 
@@ -26,19 +26,17 @@ In addition, once our data characteristics will be extracted from the tweets, on
 
 Once both datasets are collected, we will need to merge them and think about a representation that makes the storage size not to big and that allows us to query the data easily.
 
-Finally, we will need to create an interactive map to visualize the population flows over time, the tweets' data as well as the identification of a given event and its description/analysis.
-
 One point we can notice is that the data may not be representative of all the population we're interested in (Twitter and Instagram accounts tends to be more popular and used by the new generations). 
 
 ## Deliverables
 
-As previously explained, the final goal of this project is to deliver this interactive visualization of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others based on tweets and instagram posts. We can also imagine that this map can be given with clean and explicit data tables which will be easily queryable for further applications.
+As previously explained, the final goal of this project is to deliver an exploitable data-set (ex: JSON file) of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others based on tweets and instagram posts.
 
-## Timeplan
+## Possible timeplan
 
 The first draft of the timeplan for this project is : 
+- 1-2 weeks : research on what have been already done regarding work on mobility 
 - 2 weeks : Fetching the data from Instagram for Switzerland and for some periods of time (if possible the same period as we have for the tweets : 2012-2016)
 - 4 weeks : Interpreting the given datasets of tweets given.
 - 1 week : Filtering the informations needed in these two datasets.
 - 2-3 weeks : Thinking about a memory representation that could easily fit our final vizualisation.
-- 3 weeks : Creating the visualization map
