@@ -4,6 +4,7 @@ import pandas as pd
 from nltk.corpus import stopwords
 import string
 import re
+from ast import literal_eval
 
 """
 Check if the longitude and latitude are set. 
@@ -48,6 +49,7 @@ Return a dictionnary containing the hashtags and the number of occurences.
 def dictionnary_from_hashtags(df, ncluster):
     d = {}
     for hashtags_ in df[df['cluster']==ncluster].hashtags:
+        hashtags_ = literal_eval(hashtags_)
         if(hashtags_!=[]):
             for hashtag in hashtags_:
                 if hashtag in d:
@@ -64,6 +66,7 @@ Return a dictionnary containing the words and the number of occurences.
 def dictionnary_from_keywords(df, ncluster):
     d = {}
     for text_ in df[df['cluster']==ncluster].text:
+        text_ = literal_eval(text_)
         for word in text_:
                 if word in d:
                     d[word]+=1

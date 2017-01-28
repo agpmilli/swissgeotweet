@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/new.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="css/iThing.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
+    <title>CH-Viz-Alain</title>
+</head>
+<body>
+    <div id="container"></div>
+    <button class="zoom-button" data-zoom="reset">0</button>
+    <button class="zoom-button" data-zoom="out">-</button>
+    <button class="zoom-button" data-zoom="in">+</button>
+    <div id="zoom-info"></div>
+    <div id="slider"></div>  
+    <p>Date: <input type="text" id="datepicker"></p>
+    <table id="table"></table>
+    
+</body>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="http://d3js.org/topojson.v1.min.js"></script>
+    <script src="https://d3js.org/d3-dsv.v1.min.js"></script>
+    <script src="http://rawgithub.com/markmarkoh/datamaps/master/dist/datamaps.none.min.js"></script>
+    <script src="js/jQDateRangeSlider-min.js"></script>
+    <script>
+    //<!--
+      $("#slider").dateRangeSlider();
+      $("#slider").bind("valuesChanged", function(e, data){
+        console.log("Will be executed");
+      });
+      $("#slider").dateRangeSlider(
+          "option",
+          "bounds",
+          {
+            min: new Date(2010, 1, 1),
+            max: new Date(2016, 12, 31)  
+        },  "defaultValues", {
+        min: new Date(2011, 1, 1),
+        max: new Date(2012, 1, 1)
+      });
+      //$("#slider").rangeSlider("values", new Date(2010,1,1), new Date(2016,1,1));
+      
+    //-->
+    </script>
+    <script src="js/new.js"></script>
+</html>
