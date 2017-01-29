@@ -253,7 +253,7 @@ Datamap.prototype._handleMapReady = function(datamap) {
 
 var dataSet = new Array();
 var bubbleDay = new Array();
-d3.csv("twex_event_final_events_10000.csv", function(csvdata1) {
+d3.csv("twex_event_final_events.csv", function(csvdata1) {
 
     globalcsvdata1 = csvdata1;
     for (var i=0;i<csvdata1.length;i++){
