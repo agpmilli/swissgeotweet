@@ -1,9 +1,0 @@
-2       userId          bigint(20)        UNSIGNED    No    None
-3       createdAt       timestamp            No    0000-00-00 00:00:00
-5       longitude       float            Yes    NULL
-6       latitude        float            Yes    NULL
-7       placeId         varchar(25)    utf8_general_ci        Yes    NULL
-11      placeLatitude   float            Yes    NULL
-12      placeLongitude  float            Yes    NULL
-20      userLocation    varchar(200)    utf8_general_ci        Yes    NULL
-
