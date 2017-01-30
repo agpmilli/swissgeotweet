@@ -10,6 +10,6 @@ def in_switzerland(row):
     country = cc.getCountry(countries.Point(latitude, longitude)).iso
     return country
  
-tweets = pd.read_csv("../twitter-swisscom/twex_event_no_country.csv", sep=',', encoding='utf-8')
+tweets = pd.read_csv("../twitter-swisscom/event_no_country.csv", sep=',', encoding='utf-8')
 tweets['country'] = tweets.apply(in_switzerland, axis=1)
-tweets.to_csv("../twitter-swisscom/twex_event_country.csv", sep=',', encoding='utf-8', index=False)
+tweets.to_csv("../twitter-swisscom/event_country.csv", sep=',', encoding='utf-8', index=False)
