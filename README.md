@@ -42,4 +42,4 @@ The first draft of the timeplan for this project is :
 - 2-3 weeks : Thinking about a memory representation that could easily fit our final vizualisation.
 
 <img src="https://cloud.githubusercontent.com/assets/8789206/22499119/27cf9a90-e85d-11e6-9fe9-4f753211306c.jpg" width="50%">
-<img src="https://cloud.githubusercontent.com/assets/8789206/22499118/27cef540-e85d-11e6-94ed-3744d3b96fed.jpg" width="400">
+<img src="https://cloud.githubusercontent.com/assets/8789206/22499118/27cef540-e85d-11e6-94ed-3744d3b96fed.jpg" width="50%">
