@@ -42,5 +42,5 @@ The first draft of the timeplan for this project is :
 - 2-3 weeks : Thinking about a memory representation that could easily fit our final vizualisation.
 
 
-![alt tag](https://raw.github.com/agpmilli/swissgeotweet/tree/master/img/event_detection_poster.jpg)
-![alt tag](https://raw.github.com/agpmilli/swissgeotweet/master/img/mobility_pattern_poster.jpg)
+![event_detection_poster](https://cloud.githubusercontent.com/assets/8789206/22499119/27cf9a90-e85d-11e6-9fe9-4f753211306c.jpg)
+![mobility_pattern_poster](https://cloud.githubusercontent.com/assets/8789206/22499118/27cef540-e85d-11e6-94ed-3744d3b96fed.jpg)
