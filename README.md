@@ -40,3 +40,7 @@ The first draft of the timeplan for this project is :
 - 4 weeks : Interpreting the given datasets of tweets given.
 - 1 week : Filtering the informations needed in these two datasets.
 - 2-3 weeks : Thinking about a memory representation that could easily fit our final vizualisation.
+
+
+![alt tag](https://raw.githubusercontent.com/agpmilli/swissgeotweet/master/img/event_detection_poster.jpg)
+![alt tag](https://raw.githubusercontent.com/agpmilli/swissgeotweet/master/img/mobility_pattern_poster.jpg)
