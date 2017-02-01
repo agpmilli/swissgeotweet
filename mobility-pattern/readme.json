@@ -1,1 +1,0 @@
-[{"name": "Suisse.Deutschland", "imports": ["Suisse"], "size": 1}, {"name": "France", "imports": ["Italia", "Suisse"], "size": 1}, {"name": "Italia", "imports": ["Deutschland", "France", "Suisse"], "size": 1}, {"name": "Suisse", "imports": ["France", "Italia", "Liechtenstein", "\u00d6sterreich"], "size": 1}, {"name": "\u00d6sterreich", "imports": ["Suisse"], "size": 1}]
