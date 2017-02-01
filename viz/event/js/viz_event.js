@@ -250,11 +250,10 @@ Datamap.prototype._handleMapReady = function(datamap) {
   });
 }
 
-
 var dataSet = new Array();
 var bubbleSet = new Array();
 var trendingSet = new Array();
-d3.csv("events_detected_final.csv", function(csvdata1) {
+d3.csv("events_detected.csv", function(csvdata1) {
 
     globalcsvdata1 = csvdata1;
     for (var i=0;i<csvdata1.length;i++){
@@ -315,7 +314,7 @@ $("#slider").bind("valuesChanging", function(e, data){
     for (var i=0; i<bubbleSet.length;i++){
         var bubble = {
             name: bubbleSet[i][0],
-            radius: Math.min(bubbleSet[i][3]/10, 10),
+            radius: Math.min(bubbleSet[i][3]/10, 15),
             country: 'CHE',
             fillKey: 'CHE',
             significance: bubbleSet[i][1],            
@@ -335,25 +334,14 @@ $("#slider").bind("valuesChanging", function(e, data){
     
     table = $('#table').DataTable( {
         data: bubbleSet,
-        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
-        columns: [
-            { title: "Name" },
-            { title: "Keywords" },
-            { title: "Number of tweets" },
-            { title: "Number of people concerned" },
-            { title: "Date" }
-        ]
+        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
     });
     
     tableTrend.destroy()
     
     tableTrend = $('#tableTrend').DataTable( {
         data: trendingSet,
-        columns: [
-            { title: "Name" },
-            { title: "Keywords" },
-            { title: "Date" }
-        ]
+        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
     });
 });
 
@@ -407,7 +395,7 @@ $("#slider").bind("valuesChanged", function(e, data){
     for (var i=0; i<bubbleSet.length;i++){
         var bubble = {
             name: bubbleSet[i][0],
-            radius: Math.min(bubbleSet[i][3]/10, 10),
+            radius: Math.min(bubbleSet[i][3]/10, 15),
             country: 'CHE',
             fillKey: 'CHE',
             significance: bubbleSet[i][1],
@@ -427,29 +415,17 @@ $("#slider").bind("valuesChanged", function(e, data){
     
     table = $('#table').DataTable( {
         data: bubbleSet,
-        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
-        columns: [
-            { title: "Name" },
-            { title: "Keywords" },
-            { title: "Number of tweets" },
-            { title: "Number of people concerned" },
-            { title: "Date" }
-        ]
+        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
     });
     
     tableTrend.destroy()
     
     tableTrend = $('#tableTrend').DataTable( {
         data: trendingSet,
-        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
-        columns: [
-            { title: "Name" },
-            { title: "Keywords" },
-            { title: "Date" }
-        ]
+        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]]
     });
 });
- 
+
 $(document).ready(function() {
     table = $('#table').DataTable( {
         data: bubbleSet,
@@ -465,6 +441,7 @@ $(document).ready(function() {
     
     tableTrend = $('#tableTrend').DataTable( {
         data: trendingSet,
+        "lengthMenu" : [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
         columns: [
             { title: "Name" },
             { title: "Keywords" },
@@ -472,30 +449,21 @@ $(document).ready(function() {
         ]
     });
     
-     
-    $('#table tbody').on( 'mouseenter', 'td', function () {
-        var rowIdx = table.cell(this).index().row;
+    $("#slider").dateRangeSlider();
 
-        $( table.rows().nodes()).removeClass( 'highlight' );
-        $( table.row( rowIdx ).nodes() ).addClass( 'highlight' );
-        $()
-        
-    } );
+    $("#slider").dateRangeSlider(
+        "option",
+        "bounds",
+        {
+            min: new Date(2010, 0, 1),
+            max: new Date(2016, 12, 31)  
+        }
+    );
     
-    $("#slider").dateRangeSlider("values", new Date(2016, 2, 5), new Date(2016, 7, 25));
+    $("#slider").dateRangeSlider("values", new Date(2016, 6, 19), new Date(2016, 6, 27));
 } );
 
 
-$("#slider").dateRangeSlider();
-
-$("#slider").dateRangeSlider(
-    "option",
-    "bounds",
-    {
-        min: new Date(2010, 1, 1),
-        max: new Date(2016, 12, 31)  
-    }
-);
-
 
 var x = new Datamap();
+
