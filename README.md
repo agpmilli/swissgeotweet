@@ -64,7 +64,7 @@ Some assumptions were made in order to obtain meaningful results.
  - has maximum frequency
 
 ## How to run
-Clone the repo and open the HTML pages in viz/event/ for the event and viz/mobility for the mobility. There's an issue if you are using Chrome browser (it doesn't let you load the local data files we use for the visualization). Firefox and Safari should work.
+Clone the repo and open the HTML pages in viz/event/ for the events and viz/mobility for the mobility. There's an issue if you are using Chrome browser (it doesn't let you load the local data files we use for the visualization). Firefox and Safari should work.
 
 #### Event detection
 In order to run the event detection
