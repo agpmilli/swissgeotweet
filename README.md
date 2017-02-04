@@ -1,18 +1,18 @@
-# Swiss geo tweet - Affluence map and mobility patterns in Switzerland
+# Swiss geo tweet - Event detection and mobility patterns in Switzerland
 
 ## Abstract
 
 The aim of this project is to:
-- build a data set of Switzerland based on various social network sources (geo-located tweets and possibly instagram posts at the moment) to compute a flow analysis into an exploitable dataset for visualization (ex: timeline map, etc.)
-- infer mobility patterns from it and try to detect from regular events (ex: people living in the Vaud canton but working in the Geneva canton) to major events (ex: Paleo Festival, Geneva auto showroom)
+- build a data set of events in Switzerland based on tweets from 2010 to 2016 (around 15 millions tweets), and maybe instagram posts an transform it into an exploitable data set for visualization (ex: timeline map, etc.)
+- detect mobility patterns to analyse users daily work-home travels and details about the average swiss workers movements
 
-With the visualization, people will have the ability to get an affluence overview in time (months, days, hours) and space (main axes, cantons, cities, places). From there, they can filter the map and display the locations they want to visit according if it's crowded or not at that time of the year/day.
+With the event visualization, people will have the ability to over a range of dates and see the main events in Swizerland, the related keywords related to them, the number of people who tweeted about them as well as the number of tweets detected.
 
 ## Data Description
 
 Our main source of data will be Twitter (and possibly Instagram posts).
 
-There's already a dataset composed of tweets in Switzerland from 2012. The [Twitter API overview](https://dev.twitter.com/overview/api) gives informations about what fields can be fetched from tweets.
+There's already a dataset composed of tweets in Switzerland from 2010. The [Twitter API overview](https://dev.twitter.com/overview/api) gives informations about what fields can be fetched from tweets.
 
 We don't already have a dataset containing Instagram posts in Switzerland and it is part of our project to see if we can get one. The [Instagram API endpoints](https://www.instagram.com/developer/endpoints/) gives informations about what can be fetched from Instagram posts (such as the [location](https://www.instagram.com/developer/endpoints/locations/)).
 
@@ -28,19 +28,32 @@ Once both datasets are collected, we will need to merge them and think about a r
 
 One point we can notice is that the data may not be representative of all the population we're interested in (Twitter and Instagram accounts tends to be more popular and used by the new generations). 
 
-## Deliverables
-
-As previously explained, the final goal of this project is to deliver an exploitable data-set (ex: JSON file) of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others based on tweets and instagram posts.
-
 ## Possible timeplan
 
 The first draft of the timeplan for this project is : 
 - 1-2 weeks : research on what have been already done regarding work on mobility 
-- 2 weeks : Fetching the data from Instagram for Switzerland and for some periods of time (if possible the same period as we have for the tweets : 2012-2016)
+- 2 weeks : Fetching the data from Instagram for Switzerland and for some periods of time (if possible the same period as we have for the tweets : 2010-2016)
 - 4 weeks : Interpreting the given datasets of tweets given.
 - 1 week : Filtering the informations needed in these two datasets.
 - 2-3 weeks : Thinking about a memory representation that could easily fit our final vizualisation.
 
+## Deliverables
+
+The final goal of this project is to deliver an exploitable data-set (ex: JSON file) of the population movements in Switzerland and its neighbor areas through time while giving some additional informations on key population gatherings such as events and others based on tweets and instagram posts.
+
+The repository is decomposed into three parts:
+ - event-detection: processing of the data for the events
+ - mobility-pattern: processing of the data for the mobility patterns
+ - viz: visualization for both tasks
+
+## Assumptions
+
+Some assumptions were made in order to obtain meaningful results.
+
+##### Event detection
+##### Mobility pattern
+
+## How to see the visualization
 
 ## Posters
 <img src="https://cloud.githubusercontent.com/assets/8789206/22499119/27cf9a90-e85d-11e6-9fe9-4f753211306c.jpg" width="49%">
