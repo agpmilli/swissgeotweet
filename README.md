@@ -50,10 +50,24 @@ The repository is decomposed into three parts:
 
 Some assumptions were made in order to obtain meaningful results.
 
-##### Event detection
-##### Mobility pattern
+#### Event detection
 
-## How to see the visualization
+- we took a radius of 3km to cluster tweets based on their locations
+- an event is described by its hashtags
+- an event has a minimum number of tweets (50) and has been tweeted by at least 20 distinct people
+- the ratio #tweets/#people to detect an event is less than 6 (in order to avoid detecting an event spammed by a bot for example)
+
+#### Mobility pattern (detect user workplace)
+
+ - 10+ tweets sent from the same location
+ - at least 2 tweets have a 24 hours offset
+ - has maximum frequency
+
+## How to run
+Clone the repo and open the HTML pages in viz/event/ for the event and viz/mobility for the mobility. There's an issue if you are using Chrome browser (it doesn't let you load the local data files we use for the visualization). Firefox and Safari should work.
+
+#### Event detection
+In order to run the event detection
 
 ## Posters
 <img src="https://cloud.githubusercontent.com/assets/8789206/22499119/27cf9a90-e85d-11e6-9fe9-4f753211306c.jpg" width="49%">
