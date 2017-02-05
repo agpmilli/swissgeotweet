@@ -26,12 +26,12 @@ In addition, once our data characteristics will be extracted from the tweets, on
 
 Once both datasets are collected, we will need to merge them and think about a representation that makes the storage size not to big and that allows us to query the data easily.
 
-One point we can notice is that the data may not be representative of all the population we're interested in (Twitter and Instagram accounts tends to be more popular and used by the new generations). 
+One point we can notice is that the data may not be representative of all the population we're interested in (Twitter and Instagram accounts tends to be more popular and used by the new generations).
 
 ## Possible timeplan
 
-The first draft of the timeplan for this project is : 
-- 1-2 weeks : research on what have been already done regarding work on mobility 
+The first draft of the timeplan for this project is :
+- 1-2 weeks : research on what have been already done regarding work on mobility
 - 2 weeks : Fetching the data from Instagram for Switzerland and for some periods of time (if possible the same period as we have for the tweets : 2010-2016)
 - 4 weeks : Interpreting the given datasets of tweets given.
 - 1 week : Filtering the informations needed in these two datasets.
@@ -44,6 +44,7 @@ The final goal of this project is to deliver an exploitable data-set (ex: JSON f
 The repository is decomposed into three parts:
  - event-detection: processing of the data for the events
  - mobility-pattern: processing of the data for the mobility patterns
+ - mobility-pattern: statistics on mobility study in notebook: mobility_pattern_statistics.ipynb
  - viz: visualization for both tasks
 
 ## Assumptions
