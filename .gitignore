@@ -8,6 +8,7 @@ __pycache__/
 
 # data
 twitter-swisscom/
+mobility-pattern/data/
 
 # C extensions
 *.so
