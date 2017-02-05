@@ -3,7 +3,7 @@
 ## Abstract
 
 The aim of this project is to:
-- build a data set of events in Switzerland based on tweets from 2010 to 2016 (around 15 millions tweets), and maybe instagram posts an transform it into an exploitable data set for visualization (ex: timeline map, etc.)
+- build a data set of events in Switzerland based on tweets from 2010 to 2016 (around 15 millions tweets), and maybe instagram posts and transform it into an exploitable data set for visualization (ex: timeline map, etc.)
 - detect mobility patterns to analyse users daily work-home travels and details about the average swiss workers movements
 
 With the event visualization, people will have the ability to over a range of dates and see the main events in Swizerland, the related keywords related to them, the number of people who tweeted about them as well as the number of tweets detected.
